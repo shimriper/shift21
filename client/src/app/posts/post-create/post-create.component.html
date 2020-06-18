@@ -1,0 +1,16 @@
+
+<form  (submit)="onAddPost(postForm)" #postForm="ngForm">
+
+  <div class="card border-primary mb-3" style="max-width: 20rem;">
+    <div class="card-header">Header</div>
+    <div class="card-body">
+      <h4 class="card-title">Primary card title</h4>
+        <input type="text" name="title" placeholder="Post title" ngModel required>
+        <textarea rows="4" name="content" placeholder="content post" ngModel required></textarea>
+      <button type="submit">save post</button>
+    </div>
+  </div>
+</form>
+
+
+
