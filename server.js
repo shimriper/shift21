@@ -3,8 +3,8 @@ const express = require('express'),
   mongoose = require('mongoose'),
   cors = require('cors'),
   bodyParser = require('body-parser'),
-  config = require('./database/db'),
-  env = require('./env');
+  config = require('./database/db');
+// env = require('./env');
 
 
 // Connecting with mongo db
