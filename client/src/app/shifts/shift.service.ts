@@ -17,7 +17,7 @@ import { environment } from '../../environments/environment';
 export class ShiftService {
   private shifts: Shift[] = [];
   shiftSaved: any[] = [];
-  endpoint: string = environment.apiUrl + '/shifts';
+  endpoint: string = '/api/shifts';
 
   constructor(
     private http: HttpClient,

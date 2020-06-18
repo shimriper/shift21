@@ -14,8 +14,10 @@ import { environment } from '../../environments/environment';
 export class WeekService {
 
   constructor(private http: HttpClient, private router: Router) { }
-  endpoint: string = environment.apiUrl + '/weeks';
-  server: string = environment.apiUrl + '/sidur';
+  // endpoint: string = environment.apiUrl + '/weeks';
+  // server: string = environment.apiUrl + '/sidur';
+  endpoint: string = '/api/weeks';
+  server: string = '/api/sidur';
 
   addWeek(week): Observable<Week> {
     return this.http.post<Week>(this.endpoint, week)

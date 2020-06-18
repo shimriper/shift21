@@ -10,7 +10,9 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class AuthService {
-  endpoint = environment.apiUrl + '/user';
+  // endpoint = environment.apiUrl + '/user';
+    endpoint = '/api/user';
+
   // headers = new HttpHeaders().set('Content-Type', 'application/json');
   // currentUser = {};
   private isAuthenticated = false;
